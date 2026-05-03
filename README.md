@@ -16,11 +16,8 @@
 - [Problem Statement](#-problem-statement)
 - [Objectives of Analysis](#-objectives-of-analysis)
 - [Dataset Description](#-dataset-description)
-- [Methodology](#-methodology)
-- [Key KPIs](#-key-kpis)
 - [Key Insights & Economic Interpretation](#-key-insights--economic-interpretation)
 - [Tools & Technologies](#️-tools--technologies)
-- [Dashboard Features](#-dashboard-features)
 - [How to Use](#-how-to-use)
 - [Author](#-author)
 
@@ -112,58 +109,6 @@ This project transforms 10 years of raw MoSPI CPI tables into a structured, anal
 
 ---
 
-## 🔧 Methodology
-
-The analysis followed a structured five-step workflow entirely within Microsoft Excel:
-
-```
-Step 1: Data Cleaning (Working Data sheet)
-   └── Removed inconsistencies in Year column (float → integer)
-   └── Handled 5 missing Rural Housing values via linear interpolation
-   └── Standardized month naming conventions
-
-Step 2: Category Consolidation (Buckets sheet)
-   └── 27 sub-categories → 8 macro spending buckets
-   └── Created weighted composite indices for each bucket
-   └── Mapped sub-categories per the MoSPI classification scheme
-
-Step 3: KPI Calculations (Problem Statement sheets 1–5)
-   └── PS1: Bucket-level composition weightage (% share of basket)
-   └── PS2: Year-on-year inflation rate (January vs. December each year)
-   └── PS3: Month-on-month Food & Beverages inflation (Jun 2022–Apr 2023)
-   └── PS4: Pre-COVID vs. Post-COVID inflation comparison (Food, Health, Essentials)
-   └── PS5: Crude oil price vs. CPI correlation analysis (2021–2023)
-
-Step 4: Visualization
-   └── Line charts for CPI trend over time
-   └── Bar/column charts for category comparison
-   └── Pivot tables for sector-wise breakdowns
-   └── Dashboard assembly with slicers
-
-Step 5: Insight Synthesis
-   └── Economic interpretation of each calculated metric
-   └── Policy implications framed around RBI mandate
-```
-
----
-
-## 📈 Key KPIs
-
-| KPI | Value | Period |
-|---|---|---|
-| 📊 General CPI (Start) | **104.6** | January 2013 |
-| 📊 General CPI (End) | **179.1** | May 2023 |
-| 📈 Total CPI Growth | **+71.2%** | 10-year cumulative |
-| 🔴 Peak YoY Inflation Rate | **6.65%** | 2014 |
-| 🟡 Lowest YoY Inflation Rate | **3.18%** | 2023 (Jan–Apr) |
-| 🍎 Food vs. General Gap (Peak) | **+5.27 index points** | 2016 |
-| 🏘️ Rural–Urban CPI Gap (Peak) | **+4.61 points** | 2017 |
-| ⛽ Fuel CPI (2022 Peak) | **182.0** | December 2022 |
-| 🥦 Vegetables Std. Deviation | **25.32** | Most volatile category |
-| 🌾 Food & Beverages Weight | **49.56%** | Of total CPI basket |
-
----
-
 ## 💡 Key Insights & Economic Interpretation
 
 ### 🔴 INSIGHT 1 — India's CPI Grew 71.2% in 10 Years, but the Rate Is Decelerating
@@ -245,23 +190,6 @@ Analyzing monthly CPI averages across all 11 years reveals a clear seasonal patt
 | **Slicers** | Interactive filtering by year, sector, and category |
 
 **Why Excel?** CPI analysis in Excel demonstrates a critical analyst skill: deriving institutional-grade economic insights from structured government data without requiring specialized statistical software — directly applicable in policy research, consulting, and banking roles.
-
----
-
-## ✨ Dashboard Features
-
-| Feature | Description |
-|---|---|
-| **Headline CPI Trend Line** | 10-year General Index trend for Rural, Urban, and Combined sectors |
-| **YoY Inflation Rate Chart** | Annual inflation rate (2014–2023) with RBI 4% target and 6% ceiling reference lines |
-| **Category Composition Chart** | Basket weightage by 8 spending buckets (Food dominates at 49.56%) |
-| **Food vs. General CPI Overlay** | Gap analysis showing persistent food inflation premium over headline CPI |
-| **Sector Comparison (Rural vs. Urban)** | Year-wise Rural–Urban CPI differential trend |
-| **Pre/Post COVID Timeline** | Inflation trajectory with March 2020 structural break marker |
-| **Crude Oil vs. Inflation Correlation** | 2021–2023 overlay chart linking global oil prices to domestic CPI |
-| **Seasonal Pattern Chart** | Month-wise average CPI showing Oct–Nov peak pattern |
-| **MoM Food Inflation Tracker** | Month-on-month food price change chart (H2 2022 – H1 2023) |
-| **Interactive Slicers** | Filter by Year, Sector (Rural/Urban/Combined), and Category Bucket |
 
 ---
 
