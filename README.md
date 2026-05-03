@@ -17,7 +17,6 @@
 - [Objectives of Analysis](#-objectives-of-analysis)
 - [Dataset Description](#-dataset-description)
 - [Methodology](#-methodology)
-- [Dashboard Preview](#-dashboard-preview)
 - [Key KPIs](#-key-kpis)
 - [Key Insights & Economic Interpretation](#-key-insights--economic-interpretation)
 - [Tools & Technologies](#️-tools--technologies)
@@ -145,12 +144,6 @@ Step 5: Insight Synthesis
    └── Economic interpretation of each calculated metric
    └── Policy implications framed around RBI mandate
 ```
-
----
-
-## 📊 Dashboard Preview
-
-![India CPI Inflation Dashboard](./images/Dashboard_Screenshot.png)
 
 ---
 
