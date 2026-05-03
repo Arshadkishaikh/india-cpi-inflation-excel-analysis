@@ -22,7 +22,6 @@
 - [Key Insights & Economic Interpretation](#-key-insights--economic-interpretation)
 - [Tools & Technologies](#️-tools--technologies)
 - [Dashboard Features](#-dashboard-features)
-- [Project Structure](#-project-structure)
 - [How to Use](#-how-to-use)
 - [Author](#-author)
 
@@ -153,9 +152,6 @@ Step 5: Insight Synthesis
 
 ![India CPI Inflation Dashboard](./images/Dashboard_Screenshot.png)
 
-> **Add your dashboard screenshot here.**
-> To embed: save your Excel dashboard as a PNG → place in `/images/` folder → the path above will render it automatically on GitHub.
-
 ---
 
 ## 📈 Key KPIs
@@ -276,33 +272,6 @@ Analyzing monthly CPI averages across all 11 years reveals a clear seasonal patt
 
 ---
 
-## 📁 Project Structure
-
-```
-india-cpi-inflation-analysis/
-│
-├── 📄 README.md                              ← You are here
-│
-├── 📂 images/
-│   └── Dashboard_Screenshot.png             ← Excel dashboard screenshot
-│                                               (export from Excel as PNG → place here)
-│
-├── 📂 excel/
-│   └── All_India_CPI_Upto_April23.xlsx      ← Full Excel workbook
-│                                               (contains all 9 sheets:
-│                                                Objective, Original Data, Working Data,
-│                                                Buckets, PS1–PS5, Dashboard)
-│
-├── 📂 dataset/
-│   └── cpi_working_data.csv                 ← Exported CSV of cleaned Working Data sheet
-│   └── cpi_buckets.csv                      ← Exported CSV of consolidated Buckets sheet
-│
-└── 📂 reports/
-    └── CPI_Analysis_Summary.pdf             ← Optional: PDF export of key findings
-```
-
----
-
 ## 🚀 How to Use
 
 ### For Recruiters & Viewers
@@ -315,21 +284,6 @@ india-cpi-inflation-analysis/
    - `Buckets` → 8-category consolidated view
    - `Problem statement 1–5` → Five analytical deep-dives
 4. Use slicers on the dashboard to filter by Year, Sector, and Category
-
-### For Analysts & Technical Review
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/india-cpi-inflation-analysis.git
-cd india-cpi-inflation-analysis
-
-# 2. Open the Excel workbook
-# excel/All_India_CPI_Upto_April23.xlsx
-# Requires: Microsoft Excel 2016+ or later
-
-# 3. For CSV-based analysis (Python/R)
-# dataset/cpi_working_data.csv — ready for pandas/tidyverse import
-```
 
 **Minimum Excel version:** Excel 2016+ (for slicer and modern chart compatibility)
 
